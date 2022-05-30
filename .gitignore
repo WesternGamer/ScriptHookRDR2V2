@@ -1,0 +1,11 @@
+
+.vs/ProjectSettings.json
+.vs/ScriptHookRDR2V2/v17/.suo
+*.obj
+*.recipe
+*.iobj
+*.ipdb
+*.log
+*.pch
+*.tlog
+*.pdb
