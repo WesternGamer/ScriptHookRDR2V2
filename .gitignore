@@ -9,3 +9,12 @@
 *.pch
 *.tlog
 *.pdb
+*.sqlite
+*.json
+ScriptHookRDR2/.vs/ScriptHookRDR2/v17/.suo
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+*.ipch
+*.dll
