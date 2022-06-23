@@ -4,6 +4,7 @@
 #include "framework.h"
 
 #include "src/rage/scrThread.hpp"
+#include "src/rage/fwBasePool.hpp"
 
 #include "src/log.hpp"
 #include "src/core.hpp"

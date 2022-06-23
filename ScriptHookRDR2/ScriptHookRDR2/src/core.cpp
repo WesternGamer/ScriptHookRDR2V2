@@ -34,6 +34,19 @@ bool Core::Init()
 
 	m_RageScrThreadUpdate = scanner.scan("rage::scrThread::Update", "E8 ? ? ? ? 8B F8 E8 ? ? ? ? 80 3D").Add(1).Rip().As<rage__scrThread__Update>();
 
+	m_PedPoolEncryptionInstance = scanner.scan("Ped pool Encryption", "0F 28 F0 48 85 DB 74 56 8A 05 ? ? ? ? 84 C0 75 05").Add(0xA).Rip().As<GameVariableEncryption*>();
+	
+	// https://uspto.report/patent/grant/11273380 Method and apparatus for preventing cheating in a video game environment by providing obfuscated game variables
+
+	const auto ptr = m_PedPoolEncryptionInstance;
+
+	if (ptr->isSet) {
+
+		const auto firstShift = _rotl64(_rotr64(ptr->second, 2), 32);
+		const auto secondShift = _rotl64(_rotl64(firstShift ^ ptr->first, 32), ((firstShift & 0xFF) & 0x1Fu) + 2);
+		m_PedPoolInstance = reinterpret_cast<rage::fwBasePool*>(~secondShift);
+	}
+
 	return true;
 }
 
