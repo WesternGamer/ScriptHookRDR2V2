@@ -156,7 +156,9 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="src\core.hpp" />
+    <ClInclude Include="src\detour.hpp" />
     <ClInclude Include="src\log.hpp" />
+    <ClInclude Include="src\rage\eGameVersion.hpp" />
     <ClInclude Include="src\rage\fwBasePool.hpp" />
     <ClInclude Include="src\rage\scrThread.hpp" />
     <ClInclude Include="src\scan.hpp" />
@@ -171,6 +173,7 @@
     </ClCompile>
     <ClCompile Include="src\core.cpp" />
     <ClCompile Include="src\exports.cpp" />
+    <ClCompile Include="src\rage\fwBasePool.cpp" />
     <ClCompile Include="src\scan.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

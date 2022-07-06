@@ -20,10 +20,10 @@ public:
 
 	void hook()
 	{
-		if (!m_hooks.empty())
+		while (!m_hooks.empty())
 		{
 			auto hook = m_hooks.top();
-			// Do Minhook hook stuff
+			// Do Minhook stuff
 			// if mh_ok print:
 			globalvars::g_LogInstance->Write("Hooked {}", hook.name);
 			m_hooks.pop();

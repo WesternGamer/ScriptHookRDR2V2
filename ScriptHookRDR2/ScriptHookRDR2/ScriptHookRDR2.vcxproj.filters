@@ -39,6 +39,12 @@
     <ClInclude Include="src\rage\fwBasePool.hpp">
       <Filter>Headerdateien\rage</Filter>
     </ClInclude>
+    <ClInclude Include="src\rage\eGameVersion.hpp">
+      <Filter>Headerdateien\rage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\detour.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -55,6 +61,9 @@
     </ClCompile>
     <ClCompile Include="src\exports.cpp">
       <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rage\fwBasePool.cpp">
+      <Filter>Headerdateien\rage</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
