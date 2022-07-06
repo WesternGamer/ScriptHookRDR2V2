@@ -47,5 +47,10 @@ namespace rage
 
 			return nullptr;
 		}
+
+		static fwBasePool* GetPedPool();
+		static fwBasePool* GetObjectPool();
+		static fwBasePool* GetVehiclePool();
+		static fwBasePool* GetPickupPool();
 	};
 }
