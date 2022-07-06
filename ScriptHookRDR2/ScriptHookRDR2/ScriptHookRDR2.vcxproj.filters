@@ -36,6 +36,9 @@
     <ClInclude Include="src\rage\scrThread.hpp">
       <Filter>Headerdateien\rage</Filter>
     </ClInclude>
+    <ClInclude Include="src\rage\fwBasePool.hpp">
+      <Filter>Headerdateien\rage</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -48,6 +51,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="src\scan.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exports.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

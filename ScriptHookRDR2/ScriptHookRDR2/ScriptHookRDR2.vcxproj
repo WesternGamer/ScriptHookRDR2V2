@@ -157,6 +157,7 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="src\core.hpp" />
     <ClInclude Include="src\log.hpp" />
+    <ClInclude Include="src\rage\fwBasePool.hpp" />
     <ClInclude Include="src\rage\scrThread.hpp" />
     <ClInclude Include="src\scan.hpp" />
   </ItemGroup>
@@ -169,6 +170,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\core.cpp" />
+    <ClCompile Include="src\exports.cpp" />
     <ClCompile Include="src\scan.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
