@@ -172,6 +172,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\core.cpp" />
+    <ClCompile Include="src\detour.cpp" />
     <ClCompile Include="src\exports.cpp" />
     <ClCompile Include="src\rage\fwBasePool.cpp" />
     <ClCompile Include="src\scan.cpp" />

@@ -65,5 +65,8 @@
     <ClCompile Include="src\rage\fwBasePool.cpp">
       <Filter>Headerdateien\rage</Filter>
     </ClCompile>
+    <ClCompile Include="src\detour.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
