@@ -1,6 +1,3 @@
-
-.vs/ProjectSettings.json
-.vs/ScriptHookRDR2V2/v17/.suo
 *.obj
 *.recipe
 *.iobj
@@ -11,7 +8,6 @@
 *.pdb
 *.sqlite
 *.json
-ScriptHookRDR2/.vs/ScriptHookRDR2/v17/.suo
 *.db
 *.db-shm
 *.db-wal
@@ -19,5 +15,5 @@ ScriptHookRDR2/.vs/ScriptHookRDR2/v17/.suo
 *.ipch
 *.dll
 .vs
-ScriptHookRDR2/x64/Release/ScriptHookRDR2.exp
-ScriptHookRDR2/x64/Release/ScriptHookRDR2.lib
+ScriptHookRDR2/x64/
+ScriptHookRDR2/x64/
