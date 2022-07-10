@@ -12,11 +12,19 @@ class Detour
 {
 public:
 
-	void queue(const char* name, LPVOID target, LPVOID ownFunc, LPVOID* original);
+	Detour();
+	~Detour();
 
-	void hook();
+	void Queue(const char* name, LPVOID target, LPVOID ownFunc, LPVOID* original);
+
+	void Hook();
+	void Destroy();
+
+	static void EnableAll();
+	static void DisableAll();
 
 private:
 	void* m_OriginalRageScrThreadUpdate{};
 	std::stack<hooks> m_hooks;
+	std::stack<LPVOID> m_doneHooks;
 };
