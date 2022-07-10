@@ -8,3 +8,4 @@
 #include <format>
 #include <string_view>
 #include <stack>
+#include <MinHook.h>

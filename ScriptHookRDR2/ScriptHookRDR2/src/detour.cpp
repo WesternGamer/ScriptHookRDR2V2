@@ -8,6 +8,7 @@ void Detour::queue(const char* name, LPVOID target, LPVOID ownFunc, LPVOID* orig
 
 void Detour::hook()
 {
+	MH_Initialize();
 	while (!m_hooks.empty())
 	{
 		auto hook = m_hooks.top();

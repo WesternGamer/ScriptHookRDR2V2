@@ -16,4 +16,5 @@
 *.dll
 .vs
 ScriptHookRDR2/x64/
-ScriptHookRDR2/x64/
+ScriptHookRDR2/ScriptHookRDR2/x64/
+ScriptHookRDR2/lib/
